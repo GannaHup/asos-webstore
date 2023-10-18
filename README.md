@@ -1,46 +1,72 @@
-# Getting Started with Create React App
+<div align="center">
+  <a href="https://asos-webstore.netlify.app" target="_blank">
+    <img src="https://user-images.githubusercontent.com/86098273/198705692-a6b402c8-c48f-4871-bc55-a153e467ba03.png" alt="Logo" width="300">
+  </a>
+  <br />
+  <h3>ASOS</h3>
+  <br />
+  [<a href="https://asos-webstore.netlify.app" target="_blank">See Apps</a>]
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div style="margin-top: 40px;">
+  <h3>ASOS Store</h3>
+  <span style="font-size: 18px">Discover Fashion Online</span>
+  <p style="margin-top: 18px;">Discover the latest fashion trends with ASOS. Shop the new collection of clothing, footwear, accessories, beauty products and more. Order today from ASOS.</p>
+  <b>This project is used for case studies not for commercialization.</b>
+  <p>Where do I get the ASOS API? I got the API from the following link: <a href="https://rapidapi.com/apidojo/api/asos2">Asos API</a></p>
+</div>
+<br />
+<br />
 
-## Available Scripts
+#### FOLDER STRUCTURE IN THIS PROJECT
 
-In the project directory, you can run:
+```
++ .husky
++ .vscode
++ public
++ src
+  + assets (Contains assets like icons, illustrations, styles global & images)
+  + components (Contains reusable component)
+  + constants (Defining data static like: route path, size)
+  + hooks (General hooks functions. ex: useDisclosure, useDebounce, etc)
+  + layouts (Contains template UI)
+  + modules (Contains hooks, service, models)
+    + hooks (hooks per module)
+    + service (Contains fetch api with axios per module)
+    + model (Contains type or interface)
+  + router (Contains configuration routes)
+  + screens (Contains the content of a page)
+    + index.tsx
+    + xxx.module.scss
+  + utils (Small function reusable)
+```
 
-### `yarn start`
+## Build with
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [TypeScript](https://www.typescriptlang.org/)
+- [ReactJs v18.2.0](https://react.dev/blog/2022/03/29/react-v18)
+- [React-Query](https://tanstack.com/query)
+- [Axios](https://axios-http.com/docs/intro)
+- [SASS](https://sass-lang.com/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project setup
 
-### `yarn test`
+1. Clone this repository with SSH
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+  $ git clone git@github.com:GannaHup/asos-webstore.git
+```
 
-### `yarn build`
+2. Create .env
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Before your run this project: install all packages needed
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+  $ yarn ci
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Run this project with command:
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+  $ yarn dev
+```
