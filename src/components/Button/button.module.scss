@@ -1,0 +1,36 @@
+.button {
+  @apply flex;
+  @apply flex-row;
+  @apply gap-2;
+  @apply border border-grey-1;
+  @apply py-2.5 px-6;
+  @apply rounded-md;
+
+  &:disabled {
+    @apply cursor-not-allowed;
+    @apply opacity-50;
+  }
+
+  .text {
+    @apply text-grey-1;
+    @apply font-medium;
+  }
+
+  &.primary {
+    @apply bg-primary;
+    @apply border-primary;
+
+    .text {
+      @apply text-white;
+    }
+  }
+
+  &.secondary {
+    @apply bg-secondary;
+    @apply border-secondary;
+
+    .text {
+      @apply text-white;
+    }
+  }
+}

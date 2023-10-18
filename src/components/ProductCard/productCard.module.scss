@@ -1,0 +1,69 @@
+.card {
+  @apply relative;
+  @apply p-2.5;
+  @apply cursor-pointer;
+  @apply flex flex-col;
+  @apply gap-4;
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 800ms;
+
+  &:hover {
+    @apply rounded-xl;
+    @apply transform scale-105;
+
+    box-shadow: 1px -1px 61px -9px #438fc28c;
+    -webkit-box-shadow: 1px -1px 61px -9px #438fc28c;
+    -moz-box-shadow: 1px -1px 61px -9px #438fc28c;
+  }
+
+  .imageCard {
+    @apply relative;
+
+    // position: relative !important;
+  }
+
+  .wrapperInfoCard {
+    @apply h-full;
+    @apply flex flex-col;
+    @apply justify-between;
+    @apply gap-4;
+
+    .nameCard {
+      @apply text-grey-2;
+      @apply overflow-hidden;
+
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .infoCard {
+      @apply flex flex-row;
+      @apply justify-between;
+      @apply items-end;
+      @apply mt-2.5;
+
+      .infoPrice {
+        @apply flex flex-col;
+        @apply gap-1;
+
+        .oldPrice {
+          @apply line-through;
+          @apply text-blue-1;
+        }
+
+        .newPrice {
+          @apply text-blue-1;
+          @apply font-medium;
+          @apply text-2xl;
+        }
+      }
+
+      .brandName {
+        @apply text-right;
+        @apply font-medium;
+      }
+    }
+  }
+}

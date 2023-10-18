@@ -1,0 +1,38 @@
+.navbar {
+  @apply bg-primary;
+  @apply flex flex-row;
+  @apply justify-between;
+  @apply px-8 py-3;
+  @apply fixed;
+  @apply top-0;
+  @apply w-full;
+  @apply z-10;
+
+  .sectionRight {
+    @apply flex flex-row;
+    @apply items-center;
+    @apply gap-3;
+    @apply cursor-pointer;
+    @apply px-3 py-1;
+    @apply rounded-md;
+
+    &:hover {
+      @apply bg-blue-1;
+    }
+  }
+
+  .logout {
+    @apply w-full;
+    @apply flex flex-row;
+    @apply justify-between;
+    @apply items-center;
+    @apply gap-2;
+    @apply bg-white;
+    @apply px-2 py-1;
+    @apply rounded;
+    @apply absolute;
+    @apply top-11;
+    @apply shadow-md;
+    @apply cursor-pointer;
+  }
+}

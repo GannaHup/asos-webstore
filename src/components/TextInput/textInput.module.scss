@@ -1,0 +1,79 @@
+.wrapperInput {
+  @apply w-full;
+  @apply flex flex-col;
+  @apply gap-2;
+
+  .label {
+    @apply text-gray-700;
+
+    &.small {
+      @apply text-sm;
+    }
+
+    &.medium {
+      @apply text-base;
+    }
+
+    &.large {
+      @apply text-lg;
+    }
+  }
+
+  .textInput {
+    @apply relative;
+
+    .input {
+      @apply w-full;
+      @apply border border-gray-500;
+      @apply rounded;
+      @apply outline-none;
+
+      &.small {
+        @apply px-3 py-1;
+        @apply text-sm;
+      }
+
+      &.medium {
+        @apply px-3 py-1.5;
+        @apply text-base;
+      }
+
+      &.large {
+        @apply px-4 py-2;
+        @apply text-lg;
+      }
+
+      &.left {
+        @apply pl-8;
+      }
+
+      &.right {
+        @apply pr-8;
+      }
+    }
+
+    .seePassword {
+      @apply absolute;
+      @apply top-1/2 right-3;
+      @apply transform -translate-y-1/2;
+      @apply cursor-pointer;
+      @apply p-1;
+    }
+
+    .icon {
+      @apply absolute;
+      @apply cursor-pointer;
+      @apply p-1;
+
+      &.left {
+        @apply top-1/2 left-1;
+        @apply transform -translate-y-1/2;
+      }
+
+      &.right {
+        @apply top-1/2 right-1;
+        @apply transform -translate-y-1/2;
+      }
+    }
+  }
+}

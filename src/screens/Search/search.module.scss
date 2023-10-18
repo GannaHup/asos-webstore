@@ -1,0 +1,19 @@
+.container {
+  @apply w-4/5;
+  @apply flex flex-col;
+  @apply gap-7;
+  @apply py-20;
+
+  .textSearch {
+    @apply text-center;
+    @apply py-10;
+    @apply text-gray-500;
+  }
+
+  .content {
+    @apply grid;
+    @apply grid-cols-4;
+    @apply gap-4;
+    @apply gap-y-8;
+  }
+}

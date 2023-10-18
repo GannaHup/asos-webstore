@@ -1,0 +1,32 @@
+.container {
+  @apply w-4/5;
+  @apply flex flex-row;
+  @apply justify-between;
+  @apply items-center;
+  @apply gap-7;
+  @apply py-20;
+
+  .shoppingImg {
+    @apply w-160;
+  }
+
+  .content {
+    @apply w-160;
+    @apply flex flex-col;
+    @apply gap-4;
+
+    .text {
+      @apply text-gray-600;
+      @apply text-justify;
+      @apply text-lg;
+    }
+
+    .searchInput {
+      @apply w-96;
+      @apply border border-gray-500;
+      @apply rounded-full;
+      @apply px-6 py-3;
+      @apply outline-none;
+    }
+  }
+}

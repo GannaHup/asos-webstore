@@ -1,0 +1,119 @@
+.container {
+  @apply w-4/5;
+  @apply flex flex-row;
+  @apply gap-16;
+  @apply py-20;
+  @apply pt-32;
+
+  .galleryImage {
+    @apply max-w-125;
+    @apply flex flex-col;
+    @apply flex-wrap;
+    @apply gap-5;
+
+    min-width: 400px;
+
+    .thumbnail {
+      @apply shadow-md;
+      @apply rounded-lg;
+
+      .imageProduct {
+        @apply h-125;
+        @apply w-full;
+      }
+    }
+
+    .listImage {
+      @apply flex flex-row;
+      @apply justify-between;
+      @apply gap-3;
+
+      .itemImage {
+        @apply cursor-pointer;
+
+        .item {
+          @apply rounded-lg;
+          @apply w-20;
+          @apply h-20;
+          @apply object-cover;
+
+          &.active {
+            @apply border-2 border-blue-400;
+          }
+        }
+      }
+    }
+  }
+
+  .infoProduct {
+    @apply flex flex-col;
+    @apply gap-4;
+
+    max-width: 60rem;
+
+    .titleProduct {
+      @apply text-blue-1;
+      @apply text-3xl;
+      @apply font-semibold;
+    }
+
+    .brandName {
+      @apply flex flex-row;
+      @apply gap-2;
+      @apply items-center;
+    }
+
+    .priceProduct {
+      @apply flex flex-row;
+      @apply items-center;
+      @apply gap-5;
+      @apply py-4;
+
+      .oldPriceProduct {
+        @apply text-2xl;
+        @apply text-blue-1;
+        @apply opacity-75;
+        @apply line-through;
+      }
+
+      .currentPriceProduct {
+        @apply text-5xl;
+        @apply text-blue-1;
+      }
+    }
+
+    .wrapperVariants {
+      @apply flex flex-col;
+      @apply gap-3;
+
+      .listVariant {
+        @apply flex flex-row;
+        @apply flex-wrap;
+        @apply items-center;
+        @apply gap-2.5;
+      }
+    }
+
+    .infoField {
+      @apply flex flex-col;
+      @apply gap-2;
+      @apply mb-5;
+      @apply py-4;
+
+      .titleInfo {
+        @apply text-lg;
+        @apply font-medium;
+      }
+
+      .aboutMeProduct {
+        @apply text-lg;
+        @apply font-medium;
+        @apply text-gray-700;
+      }
+
+      .descInfo {
+        @apply text-gray-700;
+      }
+    }
+  }
+}
