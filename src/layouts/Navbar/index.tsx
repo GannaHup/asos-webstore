@@ -27,7 +27,7 @@ export const Navbar = () => {
 
   const handleLogout = () => {
     removeAllCookies()
-    window.location.reload()
+    history.push(Constants.route.LOGIN)
   }
 
   return (
